@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.machine {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  background: #f0a;
+  display: flex;
+  align-items: center;
+}
+.monitor {
+  width: 100%;
+  height: 180px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #aaa;
+}
+.fruits {
+  width: 80px;
+  height: 100%;
+  border: 1px solid red;
+  /* overflow: hidden; */
+  text-align: center;
+  position: relative;
+}
+.fruits .pic {
+  width: 60px;
+  height: 50px;
+  position: relative;
+}
+.spin {
+  animation: scroll 3s cubic-bezier(.5,0,.5,1) forwards, blur 3s cubic-bezier(.5,0,.5,1) 1;
+}
+.fruits .pic img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  display: block;
+}
+.fruits .one {
+  animation-delay: 0.2s;
+}
+.fruits .two {
+  animation-delay: 0.5s;
+}
+.fruits .three {
+  animation-delay: 0.8s;
+}
+
+@keyframes scroll {
+  0% {transform: translate3d(0,0,0);}
+  90% {transform: translate3d(0,-2200px,0);}
+  100% {transform: translate3d(0,-2160px,0);}
+}
+@keyframes blur {
+  0% {filter: blur(0);}
+  10% {filter: blur(0);}
+  30% {filter: blur(6px);}
+  60% {filter: blur(6px);}
+  95% {filter: blur(2px);}
+  100% {filter: blur(0px);}
+}
