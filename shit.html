@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="shit.js" defer></script>
+</head>
+<style>
+  .drop-zone {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #aaa;
+  display: flex;
+  flex-wrap : wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.drop-zone div {
+  width: 95px;
+  height: 95px;
+  margin: 2px 0;
+  background-color: #cfa;
+  position: relative;
+}
+.drop-zone div img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.puzzle img {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin-right: 10px;
+}
+</style>
+<body>
+  <div class="drop-zone">
+    <div dataset-id="1"></div>
+    <div dataset-id="2"></div>
+    <div dataset-id="3"></div>
+    <div dataset-id="4"></div>
+    <div dataset-id="5"></div>
+    <div dataset-id="6"></div>
+    <div dataset-id="7"></div>
+    <div dataset-id="8"></div>
+    <div dataset-id="9"></div>
+  </div>
+  <div class="puzzle">
+    <img src="https://picsum.photos/id/1/200/300" alt="" id="1">
+    <img src="https://picsum.photos/id/2/200/300" alt="" id="2">
+    <img src="https://picsum.photos/id/3/200/300" alt="" id="3">
+    <img src="https://picsum.photos/id/4/200/300" alt="" id="4">
+    <img src="https://picsum.photos/id/5/200/300" alt="" id="5">
+    <img src="https://picsum.photos/id/6/200/300" alt="" id="6">
+    <img src="https://picsum.photos/id/7/200/300" alt="" id="7">
+    <img src="https://picsum.photos/id/8/200/300" alt="" id="8">
+    <img src="https://picsum.photos/id/9/200/300" alt="" id="9">
+  </div>
+  
+  <button class="btn">check answer</button>
+  <button class="reset"> reset</button>
+</body>
+</html>
