@@ -10,11 +10,11 @@ function spin() {
   fruit_pic.forEach(item => {
     // item.classList.remove('spin');
     console.log(item);
-    if(controlValue === 1) {
-      moveDOM();
-      item.classList.remove('spin');
-      return;
-    }
+    // if(controlValue === 1) {
+    //   moveDOM();
+    //   item.classList.remove('spin');
+    //   return;
+    // }
     item.classList.add('spin');
     setTimeout(() => {
       console.log('變換圖片');
@@ -30,7 +30,7 @@ function spin() {
     },1500);
     setTimeout(() => {
       btn.disabled = false;
-      // item.classList.remove('spin');
+      item.classList.remove('spin');
     },3100);
   })
   controlValue = 1;
